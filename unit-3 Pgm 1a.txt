@@ -1,0 +1,18 @@
+// program to define a structure and access it members
+#include<stdio.h>
+struct student {
+    int id;
+    char name[20];
+    float marks;
+};
+       int main(){
+           struct student s1 = {101, "AA", 18.4};
+           struct student s2 = {102, "BB", 40.4};
+           printf("Detail odf student 1\n\n");
+           printf("id\tname\tmarks\n");
+           printf("%d\t%s\t%.2f\n\n\n",s1.name,s1.marks);
+           printf("Detailed odf student 2\n\n");
+           printf("id\tname\tmarks\n");
+           printf("%d\t%s\t%.2f\n",s2.id,s2.name,s2.marks);
+           return 0;
+}
